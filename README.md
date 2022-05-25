@@ -20,7 +20,7 @@ conda create --name nlpop --file requirements.txt
 Append your API_BEARER_TOKEN to the bearer_token.txt in the root directory.
 ```bash
 conda activate nlpop
-python create_dataset.py
+python fetch_dataset.py
 ```
 
 
