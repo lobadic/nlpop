@@ -85,5 +85,17 @@ def load_dataset(path='./data/nlpop_dataset.csv'):
     return df_final
 
 if __name__ == "__main__":
+    import os
+    os.makedirs('./cache', exist_ok=True)
+    
     df = load_dataset(path='./data/nlpop_dataset.csv')
     df.to_csv('./cache/finat.csv', sep=',', index=False)
+
+    df = load_dataset(path='./data/train.csv')
+    df.to_csv('./cache/train.csv', sep=',', index=False)
+
+    df = load_dataset(path='./data/valid.csv')
+    df.to_csv('./cache/valid.csv', sep=',', index=False)
+
+    df = load_dataset(path='./data/test.csv')
+    df.to_csv('./cache/test.csv', sep=',', index=False)
