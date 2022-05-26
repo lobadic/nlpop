@@ -23,6 +23,10 @@ conda activate nlpop
 python fetch_dataset.py
 ```
 
+Twitter dataset will be saved to cache folder, to load it, use:
+```python
+pandas.read_csv(PATH, sep=',', lineterminator='\n')
+```
 
 
 # Citation
@@ -44,5 +48,5 @@ python fetch_dataset.py
 ```
 
 ## TODOs:
-- create dataset splits
-- basic model example
+- code refactoring
+- add basic model example
